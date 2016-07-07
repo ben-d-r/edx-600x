@@ -230,6 +230,11 @@ def playHand(hand, wordList, n):
     
     # Keep track of the total score
     totalScore = 0
+    handList = []
+    for letter in hand.keys():
+        for j in range(hand[letter]):
+             handList += letter
+    print handList
     # As long as there are still letters left in the hand:
     
         # Display the hand
